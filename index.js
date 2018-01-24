@@ -14,8 +14,14 @@ module.exports = function (options) {
     };
 
     // show the stacktrace when not in production
-    if((options && !options.production) || !production) {
-      body.stack = err.stack;
+    if(options) {
+      if(!options.production) {
+        body.stack = err.stack;
+      }
+    } else {
+      if(!production) {
+        body.stack = err.stack;
+      }
     }
 
     // internal server errors
