@@ -1,5 +1,5 @@
 {
-  "name": "api-error-handler",
+  "name": "@horacehylee/api-error-handler",
   "description": "Express error handlers for JSON APIs",
   "version": "1.0.0",
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
